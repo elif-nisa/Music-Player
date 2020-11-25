@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#7492B3"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="226dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp"
+        android:text="Müzik Çalar"
+        android:textSize="43dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="49dp"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/musicPhoto"
+        android:layout_width="332dp"
+        android:layout_height="339dp"
+        android:layout_marginLeft="-230dp"
+        android:layout_marginTop="108dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/music_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="151dp" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="284dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="-280dp"
+        android:layout_marginTop="470dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0"
+        tools:layout_editor_absoluteY="0" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="-330dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/play"
+        android:onClick="playBtnClick"
+        app:backgroundTint="#FFFFFF"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <ImageButton
+        android:id="@+id/music1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="530dp"
+        android:onClick="music1BtnClick"
+        app:srcCompat="@drawable/bir" />
+
+    <ImageButton
+        android:id="@+id/music2Btn"
+        android:layout_width="253dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="-260dp"
+        android:layout_marginTop="590dp"
+        android:onClick="music2BtnClick"
+        app:srcCompat="@drawable/iki" />
+
+    <ImageButton
+        android:id="@+id/music3Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginLeft="-260dp"
+        android:layout_marginTop="650dp"
+        android:onClick="music3BtnClick"
+        app:srcCompat="@drawable/uc" />
+
+
+</LinearLayout>
