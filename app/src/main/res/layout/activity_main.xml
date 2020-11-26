@@ -43,6 +43,7 @@
         tools:layout_editor_absoluteX="0"
         tools:layout_editor_absoluteY="0" />
 
+
     <Button
         android:id="@+id/playBtn"
         android:layout_width="30dp"
@@ -59,7 +60,7 @@
     <ImageButton
         android:id="@+id/music1Btn"
         android:layout_width="wrap_content"
-        android:layout_height="57dp"
+        android:layout_height="41dp"
         android:layout_marginTop="530dp"
         android:onClick="music1BtnClick"
         app:srcCompat="@drawable/bir" />
@@ -67,20 +68,43 @@
     <ImageButton
         android:id="@+id/music2Btn"
         android:layout_width="253dp"
-        android:layout_height="57dp"
+        android:layout_height="37dp"
         android:layout_marginLeft="-260dp"
-        android:layout_marginTop="590dp"
+        android:layout_marginTop="575dp"
         android:onClick="music2BtnClick"
         app:srcCompat="@drawable/iki" />
 
     <ImageButton
         android:id="@+id/music3Btn"
         android:layout_width="wrap_content"
-        android:layout_height="57dp"
+        android:layout_height="38dp"
         android:layout_marginLeft="-260dp"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="620dp"
         android:onClick="music3BtnClick"
         app:srcCompat="@drawable/uc" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-170dp"
+        android:layout_marginTop="475dp"
+        android:text="song name" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-160dp"
+        android:layout_marginTop="680dp" />
+    <ImageButton
+        android:id="@+id/sesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-350dp"
+        android:layout_marginTop="660dp"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
 
 
 </LinearLayout>

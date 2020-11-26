@@ -9,13 +9,16 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button playBtn ;
-    SeekBar seekBar;
+    SeekBar seekBar ;
+    SeekBar seekBar2;
     ImageView musicPhoto;
     MediaPlayer mp;
     ImageButton music1Btn;
+    TextView name;
     int time;
 
 
@@ -26,9 +29,50 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         playBtn=(Button) findViewById(R.id.playBtn);
-        seekBar=(SeekBar) findViewById(R.id.seekBar);
         musicPhoto=(ImageView) findViewById(R.id.musicPhoto);
         music1Btn=(ImageButton) findViewById(R.id.music1Btn);
+        name=(TextView) findViewById(R.id.name);
+
+        seekBar=(SeekBar) findViewById(R.id.seekBar);
+        seekBar.setMax(time);
+        seekBar.setOnSeekBarChangeListener(
+                new SeekBar.OnSeekBarChangeListener() {
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        if (fromUser) {
+                            mp.seekTo(progress);
+                            seekBar.setProgress(progress);
+                        }
+                    }
+
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+                    }
+
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+                    }
+                }
+        );
+
+        seekBar2=(SeekBar)findViewById(R.id.seekBar2);
+        seekBar2.setOnSeekBarChangeListener(
+                new SeekBar.OnSeekBarChangeListener(){
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        float volumeNum = progress / 100f;
+                        mp.setVolume(volumeNum, volumeNum);
+                    }
+
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+                    }
+
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+                    }
+                }
+        );
 
 
 
