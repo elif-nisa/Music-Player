@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         mp.setVolume(0.5f, 0.5f);
         time = mp.getDuration();
         seekBar.setMax(time);
+        name.setText("Tuğkan- Bu Kalp Seni Unutur Mu?");
 
     }
 
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
             time = mp.getDuration();
             seekBar.setMax(time);
             mp.start();
+            name.setText("Athena- Senden Benden Bizden");
             playBtn.setBackgroundResource(R.drawable.stop);
 
         }
@@ -121,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
             time = mp.getDuration();
             seekBar.setMax(time);
             mp.start();
+            name.setText("Athena- Senden Benden Bizden");
             playBtn.setBackgroundResource(R.drawable.stop);
 
         }
@@ -137,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
             time = mp.getDuration();
             seekBar.setMax(time);
             mp.start();
+            name.setText("Tom Odell- Another Love");
             playBtn.setBackgroundResource(R.drawable.stop);
 
         }
@@ -149,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
             time = mp.getDuration();
             seekBar.setMax(time);
             mp.start();
+            name.setText("Tom Odell- Another Love");
             playBtn.setBackgroundResource(R.drawable.stop);
 
         }
@@ -165,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
             time = mp.getDuration();
             seekBar.setMax(time);
             mp.start();
+            name.setText("Tuğkan- Bu Kalp Seni Unutur Mu?");
             playBtn.setBackgroundResource(R.drawable.stop);
 
         }
@@ -177,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
             time = mp.getDuration();
             seekBar.setMax(time);
             mp.start();
+            name.setText("Tuğkan- Bu Kalp Seni Unutur Mu?");
             playBtn.setBackgroundResource(R.drawable.stop);
 
         }
